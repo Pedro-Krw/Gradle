@@ -1,2 +1,3 @@
-# Gradle ![gradle-400x400](https://user-images.githubusercontent.com/59316805/111873243-fc542b00-89c1-11eb-840d-6e14a3e48301.png)
+# Gradle 
+![1_vAAkO0NCYfbOUVVFo_81gg](https://user-images.githubusercontent.com/59316805/111873318-505f0f80-89c2-11eb-8f75-942bbb78ee78.png)
 
