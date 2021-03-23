@@ -1,9 +1,8 @@
-package com.Android.Android.Tab;
+package com.Android.sa.Tab;
 
 /**
  * Created by Pedro.
  */
-
 
 import android.content.Context;
 import android.graphics.Canvas;
