@@ -1,7 +1,7 @@
-package com.kampuskoding.kampuskoding.Tab;
+package com.Android.Android.Tab;
 
 /**
- * Created by Ujang Wahyu on 24/01/2017.
+ * Created by Pedro.
  */
 
 
