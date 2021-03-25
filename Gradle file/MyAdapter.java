@@ -1,3 +1,87 @@
+// My Version Start
+package com.example.latihanaplikasi;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
+public class Mahasiswa_Adapter extends RecyclerView.Adapter<Mahasiswa_Adapter.Mahasiswanakal> {
+
+    private ArrayList<Mahasiswa> listMahasiswa;
+    public Mahasiswa_Adapter(ArrayList<Mahasiswa> listMahasiswa) {
+        this.listMahasiswa = listMahasiswa;
+
+    }
+
+
+    @NonNull
+    @Override
+    public Mahasiswa_Adapter.Mahasiswanakal onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        View view = layoutInflater.inflate(R.layout.item_mahasiswa , parent , false);
+        return new Mahasiswanakal(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull Mahasiswa_Adapter.Mahasiswanakal holder, int position) {
+        holder.nrp1.setText(listMahasiswa.get(position).getNrp());
+        holder.nama1.setText(listMahasiswa.get(position).getNama());
+        holder.email1.setText(listMahasiswa.get(position).getEmail());
+
+    }
+
+    @Override
+    public int getItemCount() {
+
+        return (listMahasiswa != null) ? listMahasiswa.size() : 0;
+    }
+
+    public class Mahasiswanakal extends RecyclerView.ViewHolder{
+        private TextView nama1, nrp1, email1;
+
+        public Mahasiswanakal(View view){
+            super(view);
+            nama1 = view.findViewById(R.id.nama1);
+            nrp1 = view.findViewById(R.id.nrp1);
+            email1 = view.findViewById(R.id.email1);
+//            git status
+        }
+    }
+}
+
+// My Version end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package com.Android.sa.Tab;
 
 
